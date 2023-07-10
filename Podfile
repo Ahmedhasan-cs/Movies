@@ -5,7 +5,6 @@ platform :ios, '13.0'
 inhibit_all_warnings!
 
 target 'Movies' do
-  pod 'Alamofire', '~> 5.5'
   pod 'Kingfisher', '~> 7.0'
   # Has its own copy of OCMock
   # and has access to GoogleAnalytics via the app
