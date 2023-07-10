@@ -57,8 +57,6 @@ class NetworkManager: APIService {
           } else {
               if (data != nil) {
                   do {
-                      let str = String(decoding: data!, as: UTF8.self)
-                      print(str)
                       completion(.success(try JSONDecoder().decode(T.self, from: data!)))
                   } catch let error {
                       print(String(data: data!, encoding: .utf8) ?? "nothing received")
